@@ -1,0 +1,34 @@
+---
+title: "SVG Example"
+format: 
+    revealjs:
+        theme: serif
+engine: julia
+---
+
+## SVGの例
+
+以下にSVG形式の図を表示します。
+
+```{julia}
+#| label: fig-parametric
+#| fig-cap: "Parametric Plots"
+
+using Plots
+using LaTeXStrings
+default(
+    fontfamily="serif-roman",
+    guidefontsize=28,
+    tickfontsize=20,
+    legendfontsize=20,
+    margin=5Plots.mm,
+)
+
+plot(sin,
+    x -> sin(2x),
+    0,
+    2π,
+    leg=false,
+    fill=(0, :lavender))
+plot!(xaxis=(L"x"), yaxis=(L"y"))
+```

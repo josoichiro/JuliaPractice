@@ -1,3 +1,6 @@
 figures/
+Slides/*
+!Slides/*.qmd
 src/*.ipynb
 .DS_Store
+.vscode/
