@@ -4,3 +4,7 @@ Slides/*
 src/*.ipynb
 .DS_Store
 .vscode/
+
+# generated files from Quarto
+slides_files
+*.html

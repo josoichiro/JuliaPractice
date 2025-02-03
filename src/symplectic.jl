@@ -80,6 +80,7 @@ function main()
     title!(p2, "Energy")
 
     plot(p1, p2, layout=(1, 2))
+    savefig("/Users/josoichiro/JuliaPractice/figures/symplectic.svg")
 end
 
 main()

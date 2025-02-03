@@ -1,14 +1,16 @@
 ---
 title: "SVG Example"
+author: "Author Name"
+date: "2021-09-01"
 format: 
     revealjs:
         theme: serif
 engine: julia
 ---
 
-## SVGの例
+## Example of SVG Output
 
-以下にSVG形式の図を表示します。
+This is an example of SVG output from a Julia code block.
 
 ```{julia}
 #| label: fig-parametric
@@ -32,3 +34,7 @@ plot(sin,
     fill=(0, :lavender))
 plot!(xaxis=(L"x"), yaxis=(L"y"))
 ```
+
+## Parametric Plots
+
+![](./figures/symplectic.svg){width="1%" fig-align="center"}
